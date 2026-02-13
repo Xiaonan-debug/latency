@@ -21,3 +21,5 @@ sudo apt install -y \
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 exec "$SHELL"
+
+cat /etc/os-release | grep -E 'PRETTY_NAME|VERSION_CODENAME'

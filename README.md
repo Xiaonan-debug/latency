@@ -14,3 +14,10 @@ python compare_latency.py
 sudo apt install -y \
   build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev \
   libsqlite3-dev libffi-dev liblzma-dev xz-utils tk-dev curl git
+
+  git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+
+  echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+exec "$SHELL"
